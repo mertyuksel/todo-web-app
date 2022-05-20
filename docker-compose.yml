@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+ notes:
+  build:
+   context: .
+  ports:
+   - 3000:3000
+   - 9229:9229
+  environment:
+   - SERVER_PORT=3000
+   - CONNECTIONSTRING=mongodb://mongodb:27017/tododb 
+  volumes:
+   - ./:/app
+  networks:
+   - my-network-name
+
+ mongo:
+  image: mongo
+  ports:
+   - 27017:27017
+  volumes:
+   - mongodb:/data/db
+   - mongodb_config:/data/configdb
+  networks:
+   - my-network-name
+
+networks:
+  my-network-name:
+
+volumes:
+ mongodb:
+ mongodb_config:
+
