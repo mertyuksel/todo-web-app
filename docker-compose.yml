@@ -25,4 +25,10 @@ services:
   networks:
    - my-network-name
 
+networks:
+  my-network-name:
+
+volumes:
+ mongodb:
+ mongodb_config:
 
