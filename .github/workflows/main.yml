@@ -39,7 +39,7 @@ jobs:
       
       - name: stop and delete all docker containers
         run: |
-          docker ps -aq | xargs docker stop | xargs docker rm
+          docker ps -aq | xargs docker stop | xargs --no-run-if-empty docker rm
           
       - name: delete all created networks
         run: |
