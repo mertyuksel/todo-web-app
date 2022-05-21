@@ -7,6 +7,9 @@ services:
   ports:
    - 3000:3000
    - 9229:9229 
+  environment:
+   - SERVER_PORT=3000
+   - CONNECTIONSTRING=mongodb://mongodb:27017/tododb 
   volumes:
    - ./:/app
   networks:
@@ -22,10 +25,4 @@ services:
   networks:
    - my-network-name
 
-networks:
-  my-network-name:
-
-volumes:
- mongodb:
- mongodb_config:
 
