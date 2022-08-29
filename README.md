@@ -15,4 +15,4 @@ See our comprehensive [report](https://drive.google.com/file/d/1SveC5KR-IiXLhLJ_
 
 &nbsp;  
 
-![alt text](.\overall.png)
+![alt text](./overallStructure.png)
