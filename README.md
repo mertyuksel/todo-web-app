@@ -1,8 +1,6 @@
-# Deploying Microservices over Docker Containers
-## CSE8090 Graduation Project
+# todo-web-app
 
-We automated the deployment process of a simple to-do web application.
-
+Automated the deployment process of a simple to-do web application.
 
 ### Technologies used: 
 - Docker
